@@ -12,14 +12,14 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID")) #API ID from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH") #API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN") # Bot token from @BotFather
-ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
+API_ID = int(os.environ.get("API_ID","5291894")) #API ID from https://my.telegram.org/auth
+API_HASH = os.environ.get("API_HASH","e15ad5a64cb8bd39b2be463d0314295f") #API Hash from https://my.telegram.org/auth
+BOT_TOKEN = os.environ.get("BOT_TOKEN","") # Bot token from @BotFather
+ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1132901778 1682338390").split(",")] if os.environ.get("ADMINS") else []
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get("DATABASE_URL", None) # mongodb uri from https://www.mongodb.com/
-OWNER_ID =  int(os.environ.get("OWNER_ID")) # id of the owner
+OWNER_ID =  int(os.environ.get("OWNER_ID","1132901778")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
