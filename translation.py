@@ -12,17 +12,18 @@ Ex: `/batch -100xxx`
 """
 
 START_MESSAGE = '''**Hello, {}
-\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your tnlinks.in Account,
+\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your [FlashLink](https://flashlink.in) Account,
     
 1. Go To 👉 https://flashlink.in/member/tools/api
 2. Than Copy API Key
-3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
+3. Than Type /shortener_api than give a single space and than paste your API Key.
 \n/set_api(space)API Key 
 \n(See Example.👇)
 Example:** `/shortener_api cbd63775f798fe6e58c67a56e6ce8b70c495cda4\n
-**💁‍♀️ Hit 👉 /help To Get Help.
-➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
-➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
+ \n**Commands :**
+ /help : To Get Help.
+/footer : To Get Help About Adding your Custom Footer to bot.
+/header : To Get Help About Adding your Custom Footer to bot.**
 '''
 
 
