@@ -11,71 +11,55 @@ Command usage: `/batch [channel id or username]`
 Ex: `/batch -100xxx`
 """
 
-START_MESSAGE = '''Hello, {}
-
-I'm a Bot to Convert Other MDisk Links to your MDisk Links or Short Other Links to Shortener Website Links by Using your API. 
-
-Just Send me Any Post with Mdisk or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
-
-Hit /help for more information about this Bot
-
-Current Method Selected: **{}**
-Current Website Selected: **{}**
+START_MESSAGE = '''**Hello, {}
+I Am tnlinks.in Bot , Bulk Link Converter. I Can Convert Links Directly From Your tnlinks.in Account,
+    
+1. Go To 👉 https://tnlinks.in/member/tools/api 
+2. Than Copy API Key
+3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
+/set_api(space)API Key 
+(See Example.👇)
+Example:** `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
+**💁‍♀️ Hit 👉 /help To Get Help.
+➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
+➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
 '''
 
 
+
 HELP_MESSAGE = '''
-Hey! My name is {firstname}. I am a Link Convertor and Shortener Bot, here to make your Work Easy and Help you to Earn more
-
-I have lots of handy features, such as 
-
+**Hey! My name is {firstname}. I am a Tnlinks Pro Shortener Bot.**
+Features 
 - [Hyperlink](https://t.me/{username})
 - Buttons convert support
-- Include domains 
-- Exclude domains
 - Header and Footer Text support
 - Replace Username
 - Banner Image
-- Batch convert (Admin Only Use)
-- Channel Support (Admin Only Use)
-- Convert forwarded posts (Admin Only Use)
-
 Helpful commands:
-
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
-- /batch -100xxx: To short or convert all posts of your channel
-
-If you have any bugs or questions on how to use me, have a look at my [website]({repo}), or contact to {owner}.
-
+If You Have Any Problem Then Contact - @TN92FF
 Available commands:
-
 - /shortener_api
-- /mdisk_api
 - /header
 - /footer
 - /username
 - /banner_image
 - /me
-- /base_site
-- /include_domain
-- /exclude_domain
-
 Use the commands to know more about the same
-
 Below are some features I provide'''
+
 
 
 ABOUT_TEXT = """
 **My Details:**
-
 `🤖 Name:` ** {} **
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
-`📢 Support:` [Talk Bot](https://t.me/t2linkspromotion_bot)
-`🌐 Source Code:` [GitHub](https://github.com/T2links)
+`👨‍💻 Developer:` [Anonymous](t.me/TN92FF)
+`📢 Support:` [DK BOTZ SUPPORT](https://t.me/TnlinksUrlShortener)
+`🌐 Source Code:` **[Click Here](https://t.me/TN92FF)**
 """
 
 
@@ -112,13 +96,7 @@ List of channels that have access to this Bot:
 
 {channels}"""
 
-
 HELP_REPLY_MARKUP = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('Methods', callback_data=f'method_command'),
-        InlineKeyboardButton('Batch', callback_data=f'cbatch_command'),
-        
-    ],
 
     [
         InlineKeyboardButton('Custom Alias', callback_data=f'alias_conf'),
@@ -127,7 +105,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 
     [
         
-        InlineKeyboardButton('Channels', callback_data=f'channels_list'),
+        #InlineKeyboardButton('Channels', callback_data=f'channels_list'),
         InlineKeyboardButton('Home', callback_data='start_command')
         
     ],
@@ -151,18 +129,15 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
         InlineKeyboardButton('Help', callback_data=f'help_command'),
         InlineKeyboardButton('About', callback_data='about_command')
     ],
-        [
-        InlineKeyboardButton('Method', callback_data=f'method_command'),
+    [
         InlineKeyboardButton('Close', callback_data='delete')
-    ],
-
+    ]
 ])
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('MDLINK', callback_data=f'change_method#mdlink'),
-        InlineKeyboardButton('Shortener', callback_data='change_method#shortener'),
-        InlineKeyboardButton('Mdisk', callback_data='change_method#mdisk')
+        InlineKeyboardButton('Mdisk + Shortener', callback_data=f'change_method#TnlinksWithMdisk'),
+        InlineKeyboardButton('Shortener', callback_data='change_method#Tnlinks')
     ],
         [
         InlineKeyboardButton('Back', callback_data=f'help_command'),
@@ -179,15 +154,6 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 USER_ABOUT_MESSAGE = """
-- Shortener Website: {base_site}
-
-- Method: {method}
-
-- {base_site} API: {shortener_api}
-
-- Mdisk API: {mdisk_api}
-
-- Username: @{username}
 
 - Header Text: 
 {header_text}
@@ -212,13 +178,8 @@ Current Mdisk API: `{}`"""
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
 `/shortener_api [api]`
             
-Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
-
-Current Website: {base_site}
-
-To change your Shortener Website: /base_site
-
-Current Shortener API: `{shortener_api}`"""
+Ex: `/shortener_api test`
+"""
 
 HEADER_MESSAGE = """Reply to the Header Text You Want
 
