@@ -12,14 +12,14 @@ Ex: `/batch -100xxx`
 """
 
 START_MESSAGE = '''**Hello, {}
-I Am tnlinks.in Bot , Bulk Link Converter. I Can Convert Links Directly From Your tnlinks.in Account,
+\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your tnlinks.in Account,
     
-1. Go To 👉 https://tnlinks.in/member/tools/api 
+1. Go To 👉 https://flashlink.in/member/tools/api
 2. Than Copy API Key
 3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
-/set_api(space)API Key 
-(See Example.👇)
-Example:** `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
+\n/set_api(space)API Key 
+\n(See Example.👇)
+Example:** `/shortener_api cbd63775f798fe6e58c67a56e6ce8b70c495cda4\n
 **💁‍♀️ Hit 👉 /help To Get Help.
 ➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
 ➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
@@ -28,18 +28,18 @@ Example:** `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
 
 
 HELP_MESSAGE = '''
-**Hey! My name is {firstname}. I am a Tnlinks Pro Shortener Bot.**
+**Hey! My name is {firstname}. I am a FlashLink Shortener Bot.**
 Features 
-- [Hyperlink](https://t.me/{username})
-- Buttons convert support
-- Header and Footer Text support
-- Replace Username
-- Banner Image
-Helpful commands:
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-If You Have Any Problem Then Contact - @TN92FF
-Available commands:
+» [Hyperlink](https://t.me/{username})
+» Buttons convert support
+» Header and Footer Text support
+» Replace Username
+» Banner Image
+\n**Helpful commands:**
+/start: Starts me! You've probably already used this.
+/help: Sends this message; I'll tell you more about myself!
+\nIf You Have Any Problem Then Contact - @FlashlinkSupport
+\n**Available commands:**
 - /shortener_api
 - /header
 - /footer
@@ -53,13 +53,9 @@ Below are some features I provide'''
 
 ABOUT_TEXT = """
 **My Details:**
-`🤖 Name:` ** {} **
-    
-`📝 Language:` [Python 3](https://www.python.org/)
-`🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Anonymous](t.me/TN92FF)
-`📢 Support:` [DK BOTZ SUPPORT](https://t.me/TnlinksUrlShortener)
-`🌐 Source Code:` **[Click Here](https://t.me/TN92FF)**
+`🤖 Name:` ** {} **  
+`🎭 Owner : [FlashLinkSupport](https://t.me/flashlinksupport)
+`🧰 Updates:` [FlashLinkOfficial](https://t.me/flashlinkofficial)**
 """
 
 
