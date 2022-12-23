@@ -163,15 +163,7 @@ USER_ABOUT_MESSAGE = """
 """
 
 
-MDISK_API_MESSAGE = """To add or update your Mdisk API, \n`/mdisk_api mdisk_api`
-            
-Ex: `/mdisk_api 6LZq851sXoPHugiKQq`
-            
-Others Mdisk Links will be automatically changed to the API of this Mdisk account
-
-Get your Mdisk API from @VideoToolMoneyTreebot
-
-Current Mdisk API: `{}`"""
+MDISK_API_MESSAGE = """Mdisk Not Supports."""
 
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
 `/shortener_api [api]`
