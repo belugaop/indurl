@@ -15,11 +15,11 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID","5291894")) #API ID from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH","e15ad5a64cb8bd39b2be463d0314295f") #API Hash from https://my.telegram.org/auth
 BOT_TOKEN = os.environ.get("BOT_TOKEN","5575648699:AAHprS8RUMb7YwbvyRvpYlgceNFdyLWU3C8") # Bot token from @BotFather
-ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1682338390 1132901778").split(",")] if os.environ.get("ADMINS") else []
+ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1682338390").split(",")] if os.environ.get("ADMINS") else []
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "FlashlinkDB")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "Flashlink")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://9860tushar:9860tushar@cluster0.cp1t882.mongodb.net/?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
-OWNER_ID =  int(os.environ.get("OWNER_ID", "1682338390 1132901778")) # id of the owner
+OWNER_ID =  int(os.environ.get("OWNER_ID", "1132901778")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
