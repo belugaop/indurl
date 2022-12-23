@@ -48,6 +48,7 @@ HELP_MESSAGE = '''
 /username
 /banner_image
 /me
+
 **Use the commands to know more about my features.**'''
 
 
@@ -74,17 +75,17 @@ Methods Available:
 To change method, choose it from the following options:
 """
 
-CUSTOM_ALIAS_MESSAGE = """For custom alias, `[link] | [custom_alias]`, Send in this format
+CUSTOM_ALIAS_MESSAGE = """For custom alias, Send in this format 👇
+`[link]` | `[custom_alias]`
 
-This feature works only in private mode only
+Ex: https://t.me/example | Example
 
-Ex: https://t.me/example | Example"""
+**» This feature works only in private mode only**"""
 
 
 ADMINS_MESSAGE = """
-List of Admins who has access to this Bot
-
-{admin_list}
+»List of Admins :
+1. {admin_list}
 """
 
 
