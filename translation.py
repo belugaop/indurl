@@ -12,51 +12,51 @@ Ex: `/batch -100xxx`
 """
 
 START_MESSAGE = '''**Hello, {}
-\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your [FlashLink](https://flashlink.in) Account,
+\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your [FlashLink](https://flashlink.in/auth/signin) Account,
     
 1. Go To 👉 https://flashlink.in/member/tools/api
-2. Than Copy API Key
-3. Than Type /shortener_api than give a single space and than paste your API Key.
-\n/set_api(space)API Key 
-\n(See Example.👇)
-Example:** `/shortener_api cbd63775f798fe6e58c67a56e6ce8b70c495cda4\n
- \n**Commands :**
- /help : To Get Help.
+2. Then Copy API Key
+3. Then Type /shortener_api than give a single space and then paste your API Key. 
+
+» Example👇**
+/shortener_api cbd63775f798fe6e58c67a56e6ce8b70c495cda4
+
+<b>» Commands :
+/help : To Get Help.
 /footer : To Get Help About Adding your Custom Footer to bot.
-/header : To Get Help About Adding your Custom Footer to bot.**
-'''
+/header : To Get Help About Adding your Custom Footer to bot.</b>'''
 
 
 
 HELP_MESSAGE = '''
 **Hey! My name is {firstname}. I am a FlashLink Shortener Bot.**
-Features 
-» [Hyperlink](https://t.me/{username})
-» Buttons convert support
-» Header and Footer Text support
-» Replace Username
-» Banner Image
-\n**Helpful commands:**
-/start: Starts me! You've probably already used this.
+
+**» Features :**
+• [Hyperlink](https://t.me/{username})
+• Buttons convert support
+• Header and Footer Text support
+• Replace Username
+• Banner Image
+\n**» Helpful commands:**
+/start: Starts me!
 /help: Sends this message; I'll tell you more about myself!
-\nIf You Have Any Problem Then Contact - @FlashlinkSupport
-\n**Available commands:**
-- /shortener_api
-- /header
-- /footer
-- /username
-- /banner_image
-- /me
-Use the commands to know more about the same
-Below are some features I provide'''
+\nIf You Have Any Problem Then Contact Our [Support.](https://t.me/FlashlinkSupport)
+\n**» Available commands:**
+/shortener_api
+/header
+/footer
+/username
+/banner_image
+/me
+**Use the commands to know more about my features.**'''
 
 
 
 ABOUT_TEXT = """
 **My Details:**
 `🤖 Name:` ** {} **  
-`🎭 Owner : [FlashLinkSupport](https://t.me/flashlinksupport)
-`🧰 Updates:` [FlashLinkOfficial](https://t.me/flashlinkofficial)**
+`🎭 **Owner :** <a href=https://t.me/FlashLinkSupport ><b>FlashLinkSupport</b></a>
+`🧰 **Updates:**` <a href=https://t.me/FlashLinkOfficial ><b>FlashLinkOfficial</b></a>
 """
 
 
@@ -133,7 +133,7 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Mdisk + Shortener', callback_data=f'change_method#TnlinksWithMdisk'),
+        InlineKeyboardButton('Shortener', callback_data=f'change_method#TnlinksWithMdisk'),
         InlineKeyboardButton('Shortener', callback_data='change_method#Tnlinks')
     ],
         [
