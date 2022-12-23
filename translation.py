@@ -53,10 +53,10 @@ HELP_MESSAGE = '''
 
 
 ABOUT_TEXT = """
-**My Details:**
-`🤖 Name:` ** {} **  
-`🎭 **Owner :** <a href=https://t.me/FlashLinkSupport ><b>FlashLinkSupport</b></a>
-`🧰 **Updates:**` <a href=https://t.me/FlashLinkOfficial ><b>FlashLinkOfficial</b></a>
+**» My Details:**
+**• Name:** ** {} **  
+**• Owner :** <a href=https://t.me/FlashLinkSupport ><b>@FlashLinkSupport</b></a>
+**• Updates:**` <a href=https://t.me/FlashLinkOfficial ><b>@FlashLinkOfficial</b></a>
 """
 
 
