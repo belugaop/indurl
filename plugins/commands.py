@@ -18,7 +18,7 @@ from utils import extract_link, get_me_button, get_size, getHerokuDetails
 logger = logging.getLogger(__name__)
 
 user_commands = ["mdisk_api", "shortener_api", "header", "footer", "username", "banner_image", "base_site", "me"]
-avl_web = ["droplink.co", "gplinks.in", "tnlink.in", "za.gl", "du-link.in", "viplink.in", "shorturllink.in", "shareus.in", "earnspace.in",]
+avl_web = ["flashlink.in"]
 
 avl_web1 = "".join(f"- {i}\n" for i in avl_web)
 
@@ -51,7 +51,7 @@ async def help_command(c, m: Message):
                 firstname=temp.FIRST_NAME,
                 username=temp.BOT_USERNAME,
                 repo=SOURCE_CODE,
-                owner="@ask_admin001" )
+                owner="FlashlinkSupport" )
 
     if WELCOME_IMAGE:
         return await m.reply_photo(photo=WELCOME_IMAGE, caption=s, reply_markup=HELP_REPLY_MARKUP)
@@ -112,7 +112,6 @@ async def stats_handler(c: Client, m:Message):
 **- Total Users:** `{total_users}`
 **- Total Posts Sent:** `{link_stats['posts']}`
 **- Total Links Shortened:** `{link_stats['links']}`
-**- Total Mdisk Links Shortened:** `{link_stats['mdisk_links']}`
 **- Total Shortener Links Shortened:** `{link_stats['shortener_links']}`
 **- Used Storage:** `{size}`
 **- Total Free Storage:** `{free}`
@@ -251,7 +250,7 @@ async def base_site_handler(bot, m:Message):
     user = await get_user(user_id)
     cmd = m.command
     site = user['base_site']
-    text = f"`/base_site (base_site)`\n\nCurrent base site: {site}\n\n EX: `/base_site shareus.in`\n\nAvailable base sites:\n{avl_web1}\nAnd All alternate sites to droplink.co"
+    text = f"<b>» Current base site:</b> {site}"
     if len(cmd) == 1:
         return await m.reply(
         text=text,
