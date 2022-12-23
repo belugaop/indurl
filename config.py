@@ -19,7 +19,7 @@ ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1682338390 1132901778
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "FlashlinkDB")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://9860tushar:9860tushar@cluster0.cp1t882.mongodb.net/?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
-OWNER_ID =  int(os.environ.get("OWNER_ID", ADMINS)) # id of the owner
+OWNER_ID =  int(os.environ.get("OWNER_ID", "1682338390 1132901778")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
