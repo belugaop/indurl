@@ -55,8 +55,9 @@ HELP_MESSAGE = '''
 
 ABOUT_TEXT = """
 **» My Details:**
+
 **• Name:** ** {} **  
-**• Owner :** <a href=https://t.me/priyanshuu11 ><b>Support</b></a>
+**• Support :** <a href=https://t.me/priyanshuu11 ><b>Click Here</b></a>
 **• Updates:**` <a href=https://t.me/IndiURL ><b>IndiURL</b></a>
 """
 
