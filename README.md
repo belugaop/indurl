@@ -1,39 +1,5 @@
 # URL Shortener Bot V2
 
-<p align="center">
-
-![Fork](https://img.shields.io/github/forks/kevinnadar22/URL-Shortener-V2?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/kevinnadar22/URL-Shortener-V2?color=%23&style=for-the-badge)
-![License](https://img.shields.io/github/license/kevinnadar22/URL-Shortener-V2?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/kevinnadar22/URL-Shortener-V2?style=for-the-badge)
-
-</p>
-
----
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/kevinnadar22/URL-Shortener-V2">
-    <img src="https://i.ibb.co/1mwchh9/Screenshot-2022-07-08-at-11-06-34-AM.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">URL Shortener Bot V2</h3>
-
-  <p align="center">
-    A Shortener and Convertor Bot
-    <br />
-    ·
-    <a href="https://www.telegram.dog/ask_admin001">Report Bug</a>
-    ·
-    <a href="https://github.com/kevinnadar22/URL-Shortener-V2#features">Features</a>
-    ·
-    <a href="https://github.com/kevinnadar22/URL-Shortener-V2#deploy">Deploy</a>
-    ·
-    <a href="https://github.com/kevinnadar22/URL-Shortener-V2#required-variables">Variables</a>
-  </p>
-</div>
-
 
 
 <!-- TABLE OF CONTENTS -->
