@@ -51,7 +51,7 @@ async def help_command(c, m: Message):
                 firstname=temp.FIRST_NAME,
                 username=temp.BOT_USERNAME,
                 repo=SOURCE_CODE,
-                owner="FlashlinkSupport" )
+                owner="priyanshuu11" )
 
     if WELCOME_IMAGE:
         return await m.reply_photo(photo=WELCOME_IMAGE, caption=s, reply_markup=HELP_REPLY_MARKUP)
