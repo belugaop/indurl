@@ -14,23 +14,23 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("API_ID","5291894")) #API ID from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH","e15ad5a64cb8bd39b2be463d0314295f") #API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN","5575648699:AAHvNDIYw14T0Y1zW5Lj2rjM9y6nKqcn3Zo") # Bot token from @BotFather
-ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1682338390").split(",")] if os.environ.get("ADMINS") else []
+BOT_TOKEN = os.environ.get("BOT_TOKEN","5943372931:AAFPbyOnJkk5XHbfSZvsz87mKqgmqHsrtD0") # Bot token from @BotFather
+ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS","1916526576").split(",")] if os.environ.get("ADMINS") else []
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "Flashlink")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "indiurl")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://9860tushar:9860tushar@cluster0.cp1t882.mongodb.net/?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
-OWNER_ID =  int(os.environ.get("OWNER_ID", "1132901778")) # id of the owner
+OWNER_ID =  int(os.environ.get("OWNER_ID", "1916526576")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001673909252")) # log channel for information about users
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001591509319")) # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", False) # For Force Subscription
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False) # true if forward should be avoided
 IS_PRIVATE = is_enabled(os.environ.get("IS_PRIVATE", 'False'), 'False') # true for private use and restricting users
-SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/PrinceStarLord/FLASHLINK-v2") # for upstream repo
+SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://google.com/") # for upstream repo
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '') # image when someone hit /start
 LINK_BYPASS = is_enabled((os.environ.get('LINK_BYPASS', "False")), False) # if true, droplink urls will be bypassed 
-BASE_SITE = os.environ.get("BASE_SITE", "flashlink.in") # your shortener site domain
+BASE_SITE = os.environ.get("BASE_SITE", "indiurl.in.net") # your shortener site domain
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get('CHANNELS', "True")), True)
