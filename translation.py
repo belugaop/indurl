@@ -12,9 +12,9 @@ Ex: `/batch -100xxx`
 """
 
 START_MESSAGE = '''**Hello, {}
-\nI Am [FlashLink Bot](https://t.me/FlashlinkOfficial), Bulk Link Converter. I Can Convert Links Directly From Your [FlashLink](https://flashlink.in/auth/signin) Account,
+\nI Am [IndiURL Bot](https://t.me/Indiurl), Bulk Link Converter. I Can Convert Links Directly From Your [IndiURL](https://indiurl.in.net/auth/signin) Account,
     
-1. Go To 👉 https://flashlink.in/member/tools/api
+1. Go To 👉 https://indiurl.in.net/member/tools/api
 2. Then Copy API Key
 3. Then Type /shortener_api than give a single space and then paste your API Key. 
 
@@ -29,7 +29,7 @@ START_MESSAGE = '''**Hello, {}
 
 
 HELP_MESSAGE = '''
-**Hey! My name is {firstname}. I am a FlashLink Shortener Bot.**
+**Hey! My name is {firstname}. I am a IndiURL Shortener Bot.**
 
 **» Features :**
 • [Hyperlink](https://t.me/{username})
@@ -40,7 +40,7 @@ HELP_MESSAGE = '''
 \n**» Helpful commands:**
 /start: Starts me!
 /help: Sends this message; I'll tell you more about myself!
-\nIf You Have Any Problem Then Contact Our [Support.](https://t.me/FlashlinkSupport)
+\nIf You Have Any Problem Then Contact Our [Support.](https://t.me/priyanshuu11)
 \n**» Available commands:**
 /shortener_api
 /header
@@ -56,8 +56,8 @@ HELP_MESSAGE = '''
 ABOUT_TEXT = """
 **» My Details:**
 **• Name:** ** {} **  
-**• Owner :** <a href=https://t.me/FlashLinkSupport ><b>@FlashLinkSupport</b></a>
-**• Updates:**` <a href=https://t.me/FlashLinkOfficial ><b>@FlashLinkOfficial</b></a>
+**• Owner :** <a href=https://t.me/priyanshuu11 ><b>Support</b></a>
+**• Updates:**` <a href=https://t.me/IndiURL ><b>IndiURL</b></a>
 """
 
 
